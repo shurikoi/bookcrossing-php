@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'e-Ukraine-Head';
+    src: url('../fonts/e-UkraineHead-Regular.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('../fonts/e-Ukraine-Regular.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'e-Ukraine-Light';
+    src: url('../fonts/e-Ukraine-Light.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'e-Ukraine-Head-Light';
+    src: url('../fonts/e-UkraineHead-Light.otf') format('opentype'); 
+}

@@ -1,0 +1,58 @@
+@import url(../fonts/fonts.css);
+
+.main {
+    /* height: 700px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title {
+    font-family: 'e-Ukraine-Head-Light';
+    font-size: 25px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    font-family: 'e-Ukraine-Light';
+    font-size: 15px;
+    width: 300px;
+    background-color: #F0F0F0;
+}
+
+/* #login:focus {
+    
+} */
+
+.submit-button {
+    padding: 10px 20px;
+    font-family: 'e-Ukraine';
+    color: black;
+    background-color: white;
+    border-radius: 11px;
+    border: 3px solid #DFDFE0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #DFDFE0;
+}
+
+.new-account {
+    font-family: 'e-Ukraine-Light';
+    font-size: 14px;
+}
+
+.input-container {
+    display: flex;
+    gap: 30px;
+}
