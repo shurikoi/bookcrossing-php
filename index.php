@@ -16,6 +16,10 @@
         require "pages/header.php";
     ?>
 
+    <a href="php_scripts/logout.php" class="menu-item">
+        Wylogować się
+    </a>
+
 <!-- <script src="main.js"></script> -->
 
   

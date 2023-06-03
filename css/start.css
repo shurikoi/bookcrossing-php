@@ -12,6 +12,10 @@
     gap: 40px;
 }
 
+form {
+    display: contents;
+}
+
 .title {
     font-family: 'e-Ukraine-Head-Light';
     font-size: 25px;

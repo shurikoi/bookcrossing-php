@@ -17,19 +17,21 @@
     ?>
 
     <div class="main">
-        <div class="title">
-            Zaloguj się
-        </div>
+        <form action="../php_scripts/start.php" method="post">
+            <div class="title">
+                Zaloguj się
+            </div>
 
-        <input type="text" name="login" placeholder="Twój email" id="login">
-        <input type="password" name="login" placeholder="Twoje hasło" id="password">
+            <input type="text" name="login" placeholder="Twój username lub email" id="login">
+            <input type="password" name="password" placeholder="Twoje hasło" id="password">
 
-        <button class="submit-button">Dalej</button>
+            <button class="submit-button">Dalej</button>
 
-        <div class="new-account">
-            Nie masz konta? 
-            <a href="registration.php">Załóż go teraz</a>
-        </div>
+            <div class="new-account">
+                Nie masz konta? 
+                <a href="registration.php">Załóż go teraz</a>
+            </div>
+        </form>
     </div>
 
 </body>
