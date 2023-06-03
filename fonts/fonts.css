@@ -17,3 +17,8 @@
     font-family: 'e-Ukraine-Head-Light';
     src: url('../fonts/e-UkraineHead-Light.otf') format('opentype'); 
 }
+
+@font-face {
+    font-family: 'e-Ukraine-Thin';
+    src: url('../fonts/e-Ukraine-Thin.otf') format('opentype'); 
+}

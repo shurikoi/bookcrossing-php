@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2023 at 01:08 PM
+-- Generation Time: Jun 04, 2023 at 12:34 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -72,29 +72,13 @@ INSERT INTO `users` (`id`, `name`, `surname`, `username`, `email`) VALUES
 -- Indexes for table `passwords`
 --
 ALTER TABLE `passwords`
-  ADD UNIQUE KEY `user_id` (`user_id`);
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD UNIQUE KEY `id` (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `passwords`
---
-ALTER TABLE `passwords`
-  MODIFY `user_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Constraints for dumped tables

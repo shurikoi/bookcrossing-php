@@ -1,16 +1,19 @@
 <?php 
-session_start();
+    session_start();
 
-$currentPage = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
+    $currentPage = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 
-if (!isset($_SESSION["username"]) && $currentPage != "presentation.php" && $currentPage != "start.php" && $currentPage != "registration.php")
-    header("Location: /bookcrossing/pages/presentation.php");
+    if (!isset($_SESSION["username"]) && $currentPage != "presentation.php" && $currentPage != "start.php" && $currentPage != "registration.php")
+        header("Location: /bookcrossing/pages/presentation.php");
+    else if (isset($_SESSION["username"])){
+    $sessionUser = mysqli_fetch_assoc(mysqli_query($connection, "SELECT name, email FROM users WHERE id = {$_SESSION['id']}"));
+    }
 ?>
 
 <header>
 
     <?php
-        if (isset($_SESSION["username"]) || $currentPage == "start.php" || $currentPage == "registration.php"):
+        if (isset($_SESSION["username"])):
     ?>
         <div class="container">
             <div class="project-name">
@@ -18,7 +21,32 @@ if (!isset($_SESSION["username"]) && $currentPage != "presentation.php" && $curr
                     <div class="logo-name">BookCrossing</div>
                 </a>
             </div>
+
+            <div class="auth-wrapper">
+                <div class="user-name">
+                    <?php echo $sessionUser["name"] ?>
+                    <img src="/bookcrossing/imgs/down-arrow.png" class="down-arrow"></img>
+                </div>
+
+                <div class="menu-wrapper hidden">
+                <div class="menu">
+                    <a href="/bookcrossing/php_scripts/logout.php" class="menu-item">
+                        Wyloguj się
+                    </a>
+                </div>
+            </div>
+            </div>
         </div>
+
+    <?php elseif ($currentPage == "start.php" || $currentPage == "registration.php"): ?>
+        <div class="container">
+            <div class="project-name">
+                <a class="name-wrapper short-img" href="/bookcrossing">
+                    <div class="logo-name">BookCrossing</div>
+                </a>
+            </div>
+        </div>
+
     <?php else:?>
         
 

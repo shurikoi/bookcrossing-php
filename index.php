@@ -16,9 +16,30 @@
         require "pages/header.php";
     ?>
 
-    <a href="php_scripts/logout.php" class="menu-item">
-        Wylogować się
-    </a>
+    <div class="main">
+        <div class="cards-wrapper">
+            <div class="card">
+                <img src="imgs/1.jpg"></img>
+                <div class="card-content">
+                    <div class="title">
+                        Jak ocalic swiat od katastrofy klimatycznej
+                    </div>
+                    <div class="author-book">Bill Gates</div>
+                    <div class="author-post">Oleksandr Bezverkhnii (twst@fmmf.xom)</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/2.jpg"></img>
+                <div class="card-content">
+                    <div class="title">
+                        Jak ocalic swiat od katastrofy klimatycznej
+                    </div>
+                    <div class="author-book">Bill Gates</div>
+                    <div class="author-post">Oleksandr Bezverkhnii (twst@fmmf.xom)</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- <script src="main.js"></script> -->
 
