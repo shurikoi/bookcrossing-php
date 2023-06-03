@@ -35,6 +35,7 @@ header {
 }
 
 .project-name {
+    position: relative;
     display: flex;
     align-items: center;
     color: white;
@@ -64,7 +65,7 @@ a {
     margin-top: 11%;
 }
 
-.start-button {
+.start-button, .fixed-button {
     padding: 15px 20px;
     font-family: 'e-Ukraine';
     color: black;
@@ -74,10 +75,30 @@ a {
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
+    transition: transform 300ms ease 0s;
+    z-index: 2;
+
 }
 
-.start-button:hover {
+.fixed-button{
+    position: fixed;
+    transform: translateY(-100px);
+    right: 60px;
+}
+
+.fixed-button.show{
+    transform: translateY(0); 
+}
+
+.start-button:hover, .fixed-button:hover {
     background-color: #DFDFE0;
+    transform: translateY(-4px);
+}
+
+.start-fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 .source-wrapper {

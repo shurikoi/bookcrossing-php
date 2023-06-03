@@ -28,6 +28,7 @@ if (!isset($_SESSION["username"]) && $currentPage != "presentation.php" && $curr
                     <div class="logo-name">BookCrossing</div>
                 </a>
                 <a href="../pages/start.php" class="start-button">Get Started</a>
+                <a href="../pages/start.php" class="fixed-button">Get Started</a>
             </div>
             <div class="motto">
                 Czytaj. Odkrywaj. Doświadczaj. Rozwijaj się. </br>Wymieniaj się. Przyjaźniaj się.
@@ -38,7 +39,8 @@ if (!isset($_SESSION["username"]) && $currentPage != "presentation.php" && $curr
             </div>
         </div>
             
-            
     <?php endif;?>
             
 </header>
+
+<script src="/bookcrossing/scripts/header.js"></script>
