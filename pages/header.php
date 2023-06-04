@@ -1,4 +1,5 @@
 <?php 
+    require "{$_SERVER["DOCUMENT_ROOT"]}/bookcrossing/php_scripts/connection.php";
     session_start();
 
     $currentPage = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);

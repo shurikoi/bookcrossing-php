@@ -10,8 +10,13 @@
             $password = $_POST['password'];
             $email = $_POST['email'];
 
+            // mysqli_query($connection, "INSERT INTO users(name, surname, username, email) VALUES ('$name', '$surname', '$username', '$email')");
+            // mysqli_query($connection, "INSERT INTO passwords (password) VALUES ('$password')");
+
             mysqli_query($connection, "INSERT INTO users(name, surname, username, email) VALUES ('$name', '$surname', '$username', '$email')");
-            mysqli_query($connection, "INSERT INTO passwords (password) VALUES ('$password')");
+            $user_id = mysqli_insert_id($connection); 
+
+            mysqli_query($connection, "INSERT INTO passwords(user_id, password) VALUES ('$user_id', '$password')");
 
            
             session_start();

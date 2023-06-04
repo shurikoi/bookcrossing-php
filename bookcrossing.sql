@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 04, 2023 at 12:34 AM
+-- Generation Time: Jun 04, 2023 at 10:31 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -39,7 +39,8 @@ CREATE TABLE `passwords` (
 INSERT INTO `passwords` (`user_id`, `password`) VALUES
 (1, 'admin'),
 (2, 'q'),
-(3, 'qwer');
+(3, 'qwer'),
+(5, 'ktos');
 
 -- --------------------------------------------------------
 
@@ -62,7 +63,9 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `surname`, `username`, `email`) VALUES
 (1, 'admin-name', '', 'admin', 'admin@gmail.com'),
 (2, 'Oleksandr', 'Bezverkhnii', '', 'dewalat485@gmail.com'),
-(3, 'qwer', 'qwer', 'qwer', 'qwer');
+(3, 'qwer', 'qwer', 'qwer', 'qwer'),
+(4, 'cos', 'cos', 'cos', 'cos@gmail.com'),
+(5, 'ktos', 'ktos', 'ktos', 'ktos@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -79,6 +82,16 @@ ALTER TABLE `passwords`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
