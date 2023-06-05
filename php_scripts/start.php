@@ -1,8 +1,9 @@
 <?php
     require "connection.php";
-
+    
     $username = $_POST['login'];
     $password = $_POST['password'];
+    require "md5.php";
 
     $query = mysqli_query($connection, "SELECT * FROM users, passwords WHERE users.id = passwords.user_id AND (users.username = '$username' OR users.email = '$username')");
 

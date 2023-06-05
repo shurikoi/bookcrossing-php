@@ -19,6 +19,7 @@
     <div class="main">
         <?php 
             require "pages/posts.php";
+            require "pages/upload_posts.php";
         ?>
     </div>
 

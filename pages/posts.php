@@ -8,7 +8,7 @@
         echo
         "
                     <div class='card'>
-                        <img src='{$post["photo"]}'></img>
+                        <img src='users_imgs/{$post["photo"]}'></img>
                         <div class='card-content'>
                             <div class='title' title='{$post["title"]}'>
                                 {$post["title"]}

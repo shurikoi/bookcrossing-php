@@ -30,12 +30,12 @@
                 </div>
 
                 <div class="menu-wrapper hidden">
-                <div class="menu">
-                    <a href="/bookcrossing/php_scripts/logout.php" class="menu-item">
-                        Wyloguj się
-                    </a>
+                    <div class="menu">
+                        <a href="/bookcrossing/php_scripts/logout.php" class="menu-item">
+                            Wyloguj się
+                        </a>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
