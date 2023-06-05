@@ -25,7 +25,7 @@
     width: 350px;
     border-radius: 12px;
     overflow: hidden;
-    padding: 20px 0px 0px;
+    padding: 20px 0px;
 }
 
 .card-content {
@@ -44,7 +44,7 @@
     max-width: 100%;
     object-fit: cover;
     border-radius: 0px 0px 0px 0px;
-    max-height: 50%;
+    max-height: 240px;
     border: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -91,13 +91,12 @@
 }
 
 #public {
-    font-family: 'e-Ukraine-Light';
-    font-size: 19px;
+    width: 100%;
 }
 
 .content {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-    width: 65%;
+    width: 55%;
     border-radius: 10px;
     background-color: white;
     padding: 20px;
@@ -105,7 +104,6 @@
   }
 
 .overlay {
-    transition: .2s opacity, .2s transform;
     position: fixed;
     top: 0;
     left: 0;
@@ -116,6 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2s opacity, .2s transform;
 }
 
 .input-container {
@@ -132,7 +131,7 @@ input {
     width: 90%;
 }
 
-#title, #author {
+#title, #author, .upload-container {
     font-family: 'e-Ukraine-Light';
     font-size: 19px;
 }
@@ -141,17 +140,14 @@ input {
     margin-top: -10px;
     display: flex;
     flex-direction: row;
-    font-family: 'e-Ukraine-Light';
-    font-size: 16px;
     align-items: center;
-    border: 1px dotted black;
-    border-radius: 15px;
-    padding: 10px 30px;
-    width: 50%;
+    width: 80%;
+    color: #757575;
+    margin-left: 2px;
 }
 
 .upload-label {
-    width: 65%;
+    width: 60%;
 }
 
 .upload::file-selector-button {
@@ -163,8 +159,49 @@ input {
     color: #fff;
     cursor: pointer;
     transition: background .2s ease-in-out;
-  }
+}
   
-  .upload::file-selector-button:hover {
+.upload::file-selector-button:hover {
     background: #8b7237;
-  }
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: 'e-Ukraine';
+    color: black;
+    background-color: white;
+    border-radius: 11px;
+    border: 3px solid #DFDFE0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #DFDFE0;
+}
+
+.title-upload-container {
+    display: flex;
+    font-family: 'e-Ukraine-Light';
+    font-size: 19px;
+    cursor: pointer;
+}
+
+/* .create-post-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    font-family: 'e-Ukraine';
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+
+.create-post-btn:hover{
+    background-color: #EBEBEB; 
+} */
+

@@ -24,6 +24,9 @@
             </div>
 
             <div class="auth-wrapper">
+                <div class="start-button share">
+                    Podziel się
+                </div>
                 <div class="user-name">
                     <?php echo $sessionUser["name"] ?>
                     <img src="/bookcrossing/imgs/down-arrow.png" class="down-arrow"></img>
@@ -56,8 +59,8 @@
                 <a class="name-wrapper" href="/bookcrossing">
                     <div class="logo-name">BookCrossing</div>
                 </a>
-                <a href="../pages/start.php" class="start-button">Get Started</a>
-                <a href="../pages/start.php" class="fixed-button">Get Started</a>
+                <a href="../pages/start.php" class="start-button start">Get Started</a>
+                <a href="../pages/start.php" class="fixed-button start">Get Started</a>
             </div>
             <div class="motto">
                 Czytaj. Odkrywaj. Doświadczaj. Rozwijaj się. </br>Wymieniaj się. Przyjaźniaj się.
