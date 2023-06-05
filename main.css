@@ -25,7 +25,7 @@
     width: 350px;
     border-radius: 12px;
     overflow: hidden;
-    padding: 20px 0px;
+    padding: 20px 0px 0px;
 }
 
 .card-content {
@@ -119,17 +119,52 @@
 }
 
 .input-container {
-    margin-top: 25px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 input {
     border: none;
     outline: none;
     padding: 3px;
-    font-family: 'e-Ukraine-Light';
-    font-size: 19px;
     width: 90%;
 }
+
+#title, #author {
+    font-family: 'e-Ukraine-Light';
+    font-size: 19px;
+}
+
+.upload-container {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'e-Ukraine-Light';
+    font-size: 16px;
+    align-items: center;
+    border: 1px dotted black;
+    border-radius: 15px;
+    padding: 10px 30px;
+    width: 50%;
+}
+
+.upload-label {
+    width: 65%;
+}
+
+.upload::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #a98538;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  .upload::file-selector-button:hover {
+    background: #8b7237;
+  }
